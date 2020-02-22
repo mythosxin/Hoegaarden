@@ -6,16 +6,16 @@ import './style'
 export default class App extends Component {
 
   state = {
-    parse: 'http://www.wwx.com?name=aaa&name=bbb&age=25',
+    parse: 'http://www.qfed.com?name=aaa&name=bbb&age=25',
     parseResult: '{"age":"25","name":["aaa","bbb"]}',
-    param: 'http://www.wwx.com?name=aaa&name=bbb&age=25',
+    param: 'http://www.qfed.com?name=aaa&name=bbb&age=25',
     paramKey: 'name',
     paramResult: '["aaa","bbb"]',
     stringify: `{name: ['aaa', 'bbb'], age: 25}`,
     stringifyResult: 'name=aaa&name=bbb&age=25',
-    parseUrl: 'http://www.wwx.com?name=aaa&name=bbb&age=25',
-    parseUrlResult: '{"url":"http://www.wwx.com","query":{"age":"25","name":["aaa","bbb"]}}',
-    extract: 'http://www.wwx.com?name=aaa&name=bbb&age=25',
+    parseUrl: 'http://www.qfed.com?name=aaa&name=bbb&age=25',
+    parseUrlResult: '{"url":"http://www.qfed.com","query":{"age":"25","name":["aaa","bbb"]}}',
+    extract: 'http://www.qfed.com?name=aaa&name=bbb&age=25',
     extractResult: 'name=aaa&name=bbb&age=25',
   }
 

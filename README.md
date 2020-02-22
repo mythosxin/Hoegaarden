@@ -1,4 +1,4 @@
-# @wwx/hoegaarden(豪格登)
+# @qfed/hoegaarden(豪格登)
 
 ##  Brief Introduction
 
@@ -8,24 +8,24 @@ hoegaarden（豪格登）又名福佳白，一种啤酒的名字。
 
 ##  Links to Online
 
-[在线链接](https://wwx.github.io/hoegaarden/)
+[在线链接](https://qfed.github.io/hoegaarden/)
 
 ## Install
 
 ```
-$ npm install @wwx/hoegaarden
+$ npm install @qfed/hoegaarden
 ```
 
 ## Usage
 
 ```js
-const url = require('@wwx/hoegaarden');
+const url = require('@qfed/hoegaarden');
 
-url.parse('http://www.wwx.com?name=aaa&name=bbb&age=25')
-url.param('http://www.wwx.com?name=aaa&name=bbb&age=25','name')
+url.parse('http://www.qfed.com?name=aaa&name=bbb&age=25')
+url.param('http://www.qfed.com?name=aaa&name=bbb&age=25','name')
 url.stringify({name: ['aaa', 'bbb'], age: 25})
-url.parseUrl('http://www.wwx.com?name=aaa&name=bbb&age=25')
-url.extract('http://www.wwx.com?name=aaa&name=bbb&age=25')
+url.parseUrl('http://www.qfed.com?name=aaa&name=bbb&age=25')
+url.extract('http://www.qfed.com?name=aaa&name=bbb&age=25')
 ```
 
 
@@ -36,9 +36,9 @@ url.extract('http://www.wwx.com?name=aaa&name=bbb&age=25')
 以对象字面量形式返回 url 中的 query 解析结果
 
 ```js
-const hoegaarden = require('@wwx/hoegaarden');
+const hoegaarden = require('@qfed/hoegaarden');
 
-hoegaarden.parse('http://www.wwx.com?name=aaa&name=bbb&age=25')
+hoegaarden.parse('http://www.qfed.com?name=aaa&name=bbb&age=25')
 //=> {name: ['aaa', 'bbb'], age: 25}
 ```
 
@@ -47,12 +47,12 @@ hoegaarden.parse('http://www.wwx.com?name=aaa&name=bbb&age=25')
 复用parse，传入 url 与 key 返回其对应的 value
 
 ```js
-const url = require('@wwx/hoegaarden');
+const url = require('@qfed/hoegaarden');
 
-url.param('http://www.wwx.com?name=aaa&name=bbb&age=25','name')
+url.param('http://www.qfed.com?name=aaa&name=bbb&age=25','name')
 //=> ['aaa', 'bbb']
 
-url.param('http://www.wwx.com?name=aaa&name=bbb&age=25','age')
+url.param('http://www.qfed.com?name=aaa&name=bbb&age=25','age')
 //=> '25'
 ```
 
@@ -61,7 +61,7 @@ url.param('http://www.wwx.com?name=aaa&name=bbb&age=25','age')
 将一个对象转化为 url 中携带的参数格式的 string
 
 ```js
-const url = require('@wwx/hoegaarden');
+const url = require('@qfed/hoegaarden');
 
 url.stringify({name: ['aaa', 'bbb'], age: 25})
 //=> 'age=25&name=aaa&name=bbb'
@@ -72,10 +72,10 @@ url.stringify({name: ['aaa', 'bbb'], age: 25})
 复用parse，将 url 中地址与参数分开
 
 ```js
-const url = require('@wwx/hoegaarden');
+const url = require('@qfed/hoegaarden');
 
-url.parseUrl('http://www.wwx.com?name=aaa&name=bbb&age=25');
-//=> {url: 'http://www.wwx.com', query: {name: ['aaa', 'bbb'], age: 25}}
+url.parseUrl('http://www.qfed.com?name=aaa&name=bbb&age=25');
+//=> {url: 'http://www.qfed.com', query: {name: ['aaa', 'bbb'], age: 25}}
 ```
 
 ### .extract(string)
@@ -83,8 +83,8 @@ url.parseUrl('http://www.wwx.com?name=aaa&name=bbb&age=25');
  截取 url 携带的参数
 
 ```js
-const url = require('@wwx/hoegaarden');
+const url = require('@qfed/hoegaarden');
 
-url.extract('http://www.wwx.com?name=aaa&name=bbb&age=25')
+url.extract('http://www.qfed.com?name=aaa&name=bbb&age=25')
 //=> 'name=aaa&name=bbb&age=25'
 ```

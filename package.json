@@ -1,5 +1,5 @@
 {
-  "name": "@wwx/hoegaarden",
+  "name": "@qfed/hoegaarden",
   "version": "1.0.0",
   "description": "Parse, param, stringify, parseUrl and extract with url",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "hoegaarden": "https://github.com/wwx/hoegaarden.git"
+    "hoegaarden": "https://github.com/mythosxin/Hoegaarden.git"
   },
   "author": "wwx",
   "license": "ISC",
@@ -19,5 +19,11 @@
     "@qfed/lilith-compiler": "^0.0.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "hoegaarden"
+  ]
 }

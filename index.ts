@@ -9,7 +9,7 @@ interface Hoegaarden {
    * 以对象字面量形式返回 url query 解析结果
    * @param url
    * @example
-   * parse('http://www.wwx.com?name=aaa&name=bbb&age=25')  // {name: ['aaa', 'bbb'], age: 25}
+   * parse('http://www.qfed.com?name=aaa&name=bbb&age=25')  // {name: ['aaa', 'bbb'], age: 25}
    */
   parse(url: string): Query
 
@@ -18,7 +18,7 @@ interface Hoegaarden {
    * @param url
    * @param key
    * @example
-   * param('http://www.wwx.com?name=aaa&name=bbb&age=25','name')  // ['aaa', 'bbb']
+   * param('http://www.qfed.com?name=aaa&name=bbb&age=25','name')  // ['aaa', 'bbb']
    */
   param(url: string, key: string): string
 
@@ -35,14 +35,14 @@ interface Hoegaarden {
    * 将 url、query 分开
    * @param url
    * @example
-   * parseUrl('http://www.wwx.com?name=aaa') // {url: 'http://www.wwx.com', query: {name: 'aaa'}}
+   * parseUrl('http://www.qfed.com?name=aaa') // {url: 'http://www.qfed.com', query: {name: 'aaa'}}
    */
   parseUrl(url: string): Object
   /**
    * 截取 url 携带的参数
    * @param url
    * @example
-   * extract('http://www.wwx.com?name=aaa') // ‘name=aaa’
+   * extract('http://www.qfed.com?name=aaa') // ‘name=aaa’
    */
   extract(url: string): string
 
